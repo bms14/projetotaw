@@ -1,0 +1,39 @@
+body {
+
+    background-color: rgb(235, 216, 187);
+    
+}
+.container {
+    height: 100%;
+    align-content: center;
+}
+footer{
+    background-color: rgb(94, 90, 85);
+    color: rgb(248, 177, 71);
+    font-size: 100%;
+
+}
+.home {
+    position: relative;
+    font-size: 30px;
+    color: rgb(230, 154, 13);   
+    top: 5%;
+	left: 5%;
+}
+.title {    
+    font-size: 80px;
+    color: rgb(230, 154, 13);
+    text-align: center;
+}
+.title1 {    
+    font-size: 30px;
+    color: rgb(230, 154, 13);
+    text-align: left;
+}
+.title2 {    
+    font-size: 30px;
+    color: rgb(230, 154, 13);
+    text-align: left;
+}.precos{
+    color: black;
+}

@@ -1,1 +1,175 @@
- 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+     <title>Encomendar</title>
+ </head>
+ <body>
+    <div class="container">
+        <h1 class="title">Star Coffee</h1>
+        <button onclick="home()" class="home"><i class="fa fa-home"></i></button>
+        <h1 class="title1">Especialidades</h1>
+        <div>
+            <a href="bifana.png" class="img1"><img src="bifana.png" width="25%" height="20%" class="galeria">
+            </a>
+            <a href="pizza.png" class="img2"><img src="pizza.png" width="25%" height="20%" class="galeria">
+            </a>
+            <a href="hamburguer.png" class="img3"><img src="hamburguer.png" width="25%" height="20%" class="galeria">
+            </a>
+            <a href="espetada.png" class="img4"><img src="espetada.png" width="25%" height="20%" class="galeria">
+            </a>
+            <a href="kebab.png" class="img5"><img src="kebab.png" width="25%" height="20%" class="galeria">
+            </a>
+            <a href="sumo.png" class="img6"><img src="sumo.png" width="25%" height="20%" class="galeria">
+            </a>
+            <a href="cachorro.png" class="img7"><img src="cachorro.png" width="25%" height="20%" class="galeria">
+            </a>
+            <a href="sandes.png" class="img8"><img src="sandes.png" width="25%" height="20%" class="galeria">
+            </a>
+            <a href="cafe1.png" class="img9"><img src="cafe1.png" width="25%" height="20%" class="galeria">
+            </a>
+        </div>
+        
+        <div>   
+            <h1 class="title2">Lista de Pedido</h1>
+        </div>
+        <div>
+            <button onclick="cont1()" class="b1">Bifana: 3€</button>
+            <button onclick="cont2()" class="b2">Pizza: 2.5€</button>
+            <button onclick="cont3()" class="b3">Hamburguer: 3€</button>
+            <button onclick="cont4()" class="b4">Espetada: 5€</button>
+            <button onclick="cont5()" class="b5">Kebab: 3.5€</button>
+            <button onclick="cont6()" class="b6">Sumo: 1€</button>
+            <button onclick="cont7()" class="b7">Cachorro: 2€</button>
+            <button onclick="cont8()" class="b8">Sandes: 1.5€</button>
+            <button onclick="cont9()" class="b9">Café: 0.50€</button>      
+        </div>
+        <div class="precos"> <!--tentar meter tudo na mesma linha e -->
+            <p class="fundo"></p>
+            <p class="preco1">Preço Total de Bifana:</p>
+            <p class="p1" id="Contagem1"> - </p>
+            <p class="preco2">Preço Total de Pizza:</p>
+            <p class="p2" id="Contagem2"> - </p>
+            <p class="preco3">Preço Total de Hamburguer:</p>
+            <p class="p3" id="Contagem3"> - </p>
+            <p class="preco4">Preço Total de Espetada:</p>
+            <p class="p4" id="Contagem4"> - </p>
+            <p class="preco5">Preço Total de Kebab:</p>
+            <p class="p5" id="Contagem5"> - </p>
+            <p class="preco6">Preço Total de Sumo:</p>
+            <p class="p6" id="Contagem6"> - </p>
+            <p class="preco7">Preço Total de Cachorro:</p>
+            <p class="p7" id="Contagem7"> - </p>
+            <p class="preco8">Preço Total de Sandes:</p>
+            <p class="p8" id="Contagem8" > - </p>
+            <p class="preco9">Preço Total de Café:</p>
+            <p class="p9" id="Contagem9"> - </p>
+            <button onclick="cont10()" class="preco10">Total</button>
+            <p class="p10" id="ContagemTotal"> - </p>
+            <button onclick="pagamento()" class="finalizar">Finalizar Pagamento</button>
+            <script>
+                function home() {
+                    window.location.href = 'inicial.html';
+                }
+                var valor1 = 0;
+                function cont1() {
+                    valor1 = valor1 + 3;
+                    document.getElementById("Contagem1").innerHTML = valor1 + " €";
+    
+                }
+
+                var valor2 = 0;
+                function cont2() {
+                    valor2 = valor2 + 2.5;
+                    document.getElementById("Contagem2").innerHTML = valor2 + " €"
+    
+                }
+                var valor3 = 0;
+                function cont3() {
+                    valor3 = valor3 + 3;
+                    document.getElementById("Contagem3").innerHTML = valor3 + " €"
+    
+                }
+                var valor4 = 0;
+                function cont4() {
+                    valor4 = valor4 + 5;
+                    document.getElementById("Contagem4").innerHTML = valor4 + " €"
+    
+                }
+                var valor5 = 0;
+                function cont5() {
+                    valor5 = valor5 + 3.5;
+                    document.getElementById("Contagem5").innerHTML = valor5 + " €"
+    
+                }
+                var valor6 = 0;
+                function cont6() {
+                    valor6 = valor6 + 1;
+                    document.getElementById("Contagem6").innerHTML = valor6 + " €"
+    
+                }
+                var valor7 = 0;
+                function cont7() {
+                    valor7 = valor7 + 2;
+                    document.getElementById("Contagem7").innerHTML = valor7 + " €"
+    
+                }
+                var valor8 = 0;
+                function cont8() {
+                    valor8 = valor8 + 1.5;
+                    document.getElementById("Contagem8").innerHTML = valor8 + " €"
+    
+                }
+                var valor9 = 0;
+                function cont9() {
+                    valor9 = valor9 + 0.5;
+                    document.getElementById("Contagem9").innerHTML = valor9 + " €"
+    
+                }
+                var valor10 = 0;
+                function cont10() {
+                    valor10 = valor1 + valor2 + valor3 + valor4 + valor5 + valor6 + valor7 + valor8 + valor9;
+                    document.getElementById("ContagemTotal").innerHTML = valor10 + " €"
+    
+                }
+                function pagamento() {
+            
+                    var x=prompt("Insira o Montante:")
+                    if (x < valor10) {
+                        alert("Crédito insuficiente!");
+                    }
+                    else {
+                        if (x > valor10) {
+                            x = x - valor10;
+                            alert("Obrigado pela sua compra! O seu troco é " + x + " € !");
+                        }
+                    else {
+                        alert("Obrigado pela sua compra! O seu troco é 0 € !");
+                    }
+                }
+            }
+            </script>
+        </div>
+    </div>
+     
+ </body>
+ <footer>
+    
+    <p class="localizacao">Onde estamos localizados:</p>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.363852394398!2d-8.737961582265585!3d41.36617892979445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd244419ac8a36b3%3A0x9219b42064878c38!2sEscola%20Superior%20de%20Media%20Artes%20e%20Design!5e0!3m2!1spt-PT!2spt!4v1580912047930!5m2!1spt-PT!2spt" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <p class="contactos">Também nos poderá contactar através do seguinte número: 220002200</p>
+    
+    
+</footer>
+ </html>
