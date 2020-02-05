@@ -15,27 +15,27 @@ footer{
      
 }
 .dia_semana {
-    font-size: 20px;
+    font-size: 30px;
     color: rgb(230, 154, 13);;
     text-align: center;
 
 }
 .home {
     position: relative;
-    font-size: 30px;
+    font-size: 200%;
     color: rgb(230, 154, 13);   
     top: 5%;
-	left: 5%;
+	left: 0%;
 }
 .home:hover {
     box-shadow: 0px 0px 5px 2px rgb(230, 154, 13);;
 }
 .lista_comida {    
     position: relative;
-    font-size: 40px;
+    font-size: 250%;
     color: rgb(230, 154, 13);
     top: 5%;
-    left: 81%;
+    left: 74%;
     
 }
 .lista_comida:hover {
